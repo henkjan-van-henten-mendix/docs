@@ -192,7 +192,7 @@ xcrun altool --upload-app --type ios --file "path/to/application.ipa"
 --username "YOUR_APPSTORE_USER_EMAIL" --password "YOUR_APPSTORE_PASSWORD"
 ```
 
-Replace `file "path/to/application.ipa"` with the absolute path to your IPA file, `username` with your developer app store email address, and `password` with your Apple App Store password.
+Replace `file "path/to/application.ipa"` with the absolute path to your IPA file, `username` with your developer app store email address, and `password` with your Apple App Store password or an App specific password (This will be needed if you have 2-factor authentication eabled on your Apple Id). An app specific password can be genrated on your Apple id [Apple id](https://appleid.apple.com/account/manage).
 
 The command will first verify your IPA is packaged correctly and ready to be shipped, and then will then upload it to TestFlight for further processing.
 
